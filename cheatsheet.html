@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>John Corpus - web portfolio</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <p>JOHN CORPUS web portfolio</p>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="index.html#section--1">Resume</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="hobbies.html#hobbies">Hobbies</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#cs">JavaScript Cheat Sheet</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          I'm John, a
+          <span class="highlight">Full-Stack</span>
+          <span class="highlight">Engineer</span>.
+        </h1>
+        <h4>I build responsive web applications from start to finish.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img src="img/jbc.png" class="header__img" alt="Full-Stack Engineer" />
+      </div>
+    </header>
+
+    <section class="section" id="cs" name="cs">
+      <div class="section__title">
+        <h2 class="section__description">JavaScript Cheat Sheet</h2>
+      </div>
+      <div class="features">
+        <div>
+          <p>Assignment Operators</p>
+          <p>
+            An assignment operator assigns a value to its left operand based on
+            the value of its right operand. Here are some of them:
+          </p>
+          <ul>
+            <li>+= addition assignment</li>
+            <li>-= subtraction assignment</li>
+            <li>*= multiplication assignment</li>
+            <li>/= division assignment</li>
+          </ul>
+        </div>
+        <div>
+          <img src="cs/arithmetic_operators.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>String Interpolation</p>
+          <p>
+            String interpolation is the process of evaluating string literals
+            containing one or more placeholders (expressions, variables, etc).
+          </p>
+          <p>
+            It can be performed using template literals: text ${expression}
+            text.
+          </p>
+        </div>
+        <div>
+          <img src="cs/string_interpolation.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Variables</p>
+          <p>
+            Variables are used whenever there’s a need to store a piece of data.
+            A variable contains data that can be used in the program elsewhere.
+            Using variables also ensures code re-usability since it can be used
+            to replace the same value in multiple places.
+          </p>
+        </div>
+        <div>
+          <img src="cs/variables.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Undefined</p>
+          <p>
+            undefined is a primitive JavaScript value that represents lack of
+            defined value. Variables that are declared but not initialized to a
+            value will have the value undefined.
+          </p>
+        </div>
+        <div>
+          <img src="cs/undefined.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Learn Javascript: Variables</p>
+          <p>
+            A variable is a container for data that is stored in computer
+            memory. It is referenced by a descriptive name that a programmer can
+            call to assign a specific value and retrieve it.
+          </p>
+        </div>
+        <div>
+          <img src="cs/js_variables.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Declaring Variables</p>
+          <p>
+            To declare a variable in JavaScript, any of these three keywords can
+            be used along with a variable name:
+          </p>
+          <ul>
+            <li>var is used in pre-ES6 versions of JavaScript.</li>
+            <li>
+              let is the preferred way to declare a variable when it can be
+              reassigned.
+            </li>
+            <li>
+              const is the preferred way to declare a variable with a constant
+              value.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="cs/declare_variables.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Template Literals</p>
+          <p>
+            Template literals are strings that allow embedded expressions,
+            ${expression}. While regular strings use single ' or double "
+            quotes, template literals use backticks instead.
+          </p>
+        </div>
+        <div>
+          <img src="cs/template_literals.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>let Keyword</p>
+          <p>
+            let creates a local variable in JavaScript & can be re-assigned.
+            Initialization during the declaration of a let variable is optional.
+            A let variable will contain undefined if nothing is assigned to it.
+          </p>
+        </div>
+        <div>
+          <img src="cs/let.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>const Keyword</p>
+          <p>
+            A constant variable can be declared using the keyword const. It must
+            have an assignment. Any attempt of re-assigning a const variable
+            will result in JavaScript runtime error.
+          </p>
+        </div>
+        <div>
+          <img src="cs/const.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>String Concatenation</p>
+          <p>
+            In JavaScript, multiple strings can be concatenated together using
+            the + operator. In the example, multiple strings and variables
+            containing string values have been concatenated. After execution of
+            the code block, the displayText variable will contain the
+            concatenated string.
+          </p>
+        </div>
+        <div>
+          <img src="cs/concatenation.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>console.log()</p>
+          <p>
+            The console.log() method is used to log or print messages to the
+            console. It can also be used to print objects and other info.
+          </p>
+        </div>
+        <div>
+          <img src="cs/console_log.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>JavaScript</p>
+          <p>
+            JavaScript is a programming language that powers the dynamic
+            behavior on most websites. Alongside HTML and CSS, it is a core
+            technology that makes the web run.
+          </p>
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Methods</p>
+          <p>
+            Methods return information about an object, and are called by
+            appending an instance with a period ., the method name, and
+            parentheses.
+          </p>
+        </div>
+        <div>
+          <img src="cs/methods.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Built-in Objects</p>
+          <p>
+            Built-in objects contain methods that can be called by appending the
+            object name with a period ., the method name, and a set of
+            parentheses.
+          </p>
+        </div>
+        <div>
+          <img src="cs/objects.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Numbers</p>
+          <p>
+            Numbers are a primitive data type. They include the set of all
+            integers and floating point numbers.
+          </p>
+        </div>
+        <div>
+          <img src="cs/numbers.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>String .length</p>
+          <p>
+            The .length property of a string returns the number of characters
+            that make up the string.
+          </p>
+        </div>
+        <div>
+          <img src="cs/length.png" class="features__img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="features">
+        <div>
+          <p>Data Instances</p>
+          <p>
+            When a new piece of data is introduced into a JavaScript program,
+            the program keeps track of it in an instance of that data type. An
+            instance is an individual case of a data type.
+          </p>
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Booleans</p>
+          <p>
+            Booleans are a primitive data type. They can be either true or
+            false.
+          </p>
+        </div>
+        <div>
+          <img src="cs/booleans.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Math.random()</p>
+          <p>
+            The Math.random() method returns a floating-point, random number in
+            the range from 0 (inclusive) up to but not including 1.
+          </p>
+        </div>
+        <div>
+          <img src="cs/random.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Math.floor()</p>
+          <p>
+            The Math.floor() function returns the largest integer less than or
+            equal to the given number.
+          </p>
+        </div>
+        <div>
+          <img src="cs/floor.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Single Line Comments</p>
+          <p>
+            In JavaScript, single-line comments are created with two consecutive
+            forward slashes //.
+          </p>
+        </div>
+        <div>
+          <img src="cs/single_comment.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Null</p>
+          <p>
+            Null is a primitive data type. It represents the intentional absence
+            of value. In code, it is represented as null.
+          </p>
+        </div>
+        <div>
+          <img src="cs/null.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Strings</p>
+          <p>
+            Strings are a primitive data type. They are any grouping of
+            characters (letters, spaces, numbers, or symbols) surrounded by
+            single quotes ' or double quotes ".
+          </p>
+        </div>
+        <div>
+          <img src="cs/strings.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Arithmetic Operators</p>
+          <p>JavaScript supports arithmetic operators for:</p>
+          <ul>
+            <li>+ addition</li>
+            <li>- subtraction</li>
+            <li>* multiplication</li>
+            <li>/ division</li>
+            <li>% modulo</li>
+          </ul>
+        </div>
+        <div>
+          <img src="cs/operators.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Multi-line Comments</p>
+          <p>
+            In JavaScript, multi-line comments are created by surrounding the
+            lines with /* at the beginning and */ at the end. Comments are good
+            ways for a variety of reasons like explaining a code block or
+            indicating some hints, etc.
+          </p>
+        </div>
+        <div>
+          <img src="cs/multiline.png" class="features__img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <p>Remainder / Modulo Operator</p>
+          <p>
+            The remainder operator, sometimes called modulo, returns the number
+            that remains after the right-hand number divides into the left-hand
+            number as many times as it evenly can.
+          </p>
+        </div>
+        <div>
+          <img src="cs/remainder.png" class="features__img" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a class="footer__link" href="index.html">John Corpus</a>.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal"></button>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
