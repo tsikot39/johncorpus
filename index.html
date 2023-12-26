@@ -9,31 +9,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>John Corpus - web portfolio</title>
+    <title>Welcome to my web portfolio!</title>
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <p>JOHN CORPUS web portfolio</p>
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--1">Resume</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="hobbies.html#hobbies">Hobbies</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="cheatsheet.html#cs"
-              >JavaScript Cheat Sheet</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <nav class="nav">
+      <p>JOHN CORPUS web portfolio</p>
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#resume">About Me</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#projects">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#certifications">Certifications</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
+    <header class="header">
       <div class="header__title">
         <h1>
           I'm John, a
@@ -41,34 +39,16 @@
           <span class="highlight">Engineer</span>.
         </h1>
         <h4>I build responsive web applications from start to finish.</h4>
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <h3>
+          <a href="#resume" class="nav__link nav__link--btn">Learn More</a>
+        </h3>
         <img src="img/jbc.png" class="header__img" alt="Full-Stack Engineer" />
       </div>
     </header>
 
-    <section class="section" id="section--1" name="section--1">
+    <section class="section" id="resume" name="resume">
       <div class="section__title">
-        <h2 class="section__description">My Resume</h2>
-      </div>
-
-      <div class="section__title">
-        <h2 class="section__subtitle">Personal Information</h2>
-        <p>Johnson Benedict Corpus</p>
-        <p>Email: corpusjohnbenedict@gmail.com</p>
-        <p>Phone: 825 747 2979</p>
-        <p>
-          LinkedIn:
-          <a
-            href="https://www.linkedin.com/in/johnson-benedict-corpus-8a8238296"
-            class="linkedin"
-            target="_blank"
-            >https://www.linkedin.com/in/johnson-benedict-corpus-8a8238296</a
-          >
-        </p>
-      </div>
-
-      <div class="section__title">
-        <h2 class="section__subtitle">Summary</h2>
+        <h2 class="section__subtitle">Professional Experience</h2>
         <p>
           Solutions-driven computer programmer with 22 years of experience in
           Information Technology. Highly experienced in all aspects of the
@@ -82,10 +62,9 @@
         <h2 class="section__subtitle">Skills</h2>
         <p>
           HTML, CSS, JavaScript, Bootstrap, jQuery, React, Redux, Node.js,
-          Front-End Development, Responsive Web Design, User Experience (UX),
-          User Interface Design, Python 3, Django, SQL, Microsoft SQL Server,
-          PostreSQL, C#, C++, Software Development, ASP.Net, VB.Net, SAP Crystal
-          Reports
+          Responsive Web Design, Full-Stack Development, Python 3, Django, SQL,
+          Microsoft SQL Server, PostreSQL, C#, C++, Software Development,
+          ASP.Net, VB.Net, SAP Crystal Reports
         </p>
       </div>
 
@@ -158,36 +137,175 @@
         <p>Bachelor of Science in Computer Science - Jun 1997 to Mar 2001</p>
         <p>Notre Dame University, Cotabato City, Philippines</p>
       </div>
+    </section>
 
+    <section class="section" id="projects" name="projects">
       <div class="section__title">
-        <h2 class="section__subtitle">Training Certificates</h2>
+        <h2 class="section__subtitle">Previous Projects</h2>
+        <dl>
+          <dt>
+            Personal Website Project (School Project - Bow Valley College,
+            Calgary, Alberta, Canada)
+          </dt>
+          <dd>
+            It's a website that represents my identity to showcase my skills,
+            experiences, portfolio to potential employers.
+          </dd>
+          <dt>
+            Hand Sanitizer Arduino Project (School Project - Bow Valley College,
+            Calgary, Alberta, Canada)
+          </dt>
+          <dd>
+            This hand sanitizer Arduino project dispenses hand sanitizer
+            automatically when triggered by a ultrasonic sensor, motion sensor
+            and joystick module. The Arduino, a microcontroller board, is used
+            to control the dispenser mechanism.
+          </dd>
+          <dt>
+            Cashier Calculator using JavaScript (School Project - Bow Valley
+            College, Calgary, Alberta, Canada)
+          </dt>
+          <dd>
+            A web application used in retail businesses, supermarkets, and other
+            establishments to perform calculations related to sales transactions
+            and manage cash handling.
+          </dd>
+          <dt>
+            Connect 3 Game using JavaScript (School Project - Bow Valley
+            College, Calgary, Alberta, Canada)
+          </dt>
+          <dd>
+            A Connect 3 game, also known as Tic Tac Toe, is a simple but classic
+            game where two players take turns marking spaces in a 6x3 grid,
+            attempting to get three of their symbols in a row—horizontally,
+            vertically, or diagonally—before the opponent does.
+          </dd>
+          <dt>Basic Life Support Courses Monitoring System</dt>
+          <dd>
+            A web application designed to track, manage, and monitor the
+            training and certification of individuals in basic life support
+            courses.
+          </dd>
+          <dt>Doctors PhilHealth Accreditation Monitoring System</dt>
+          <dd>
+            A web application used to monitor and manage the accreditation
+            status of doctors or healthcare providers with PhilHealth, the
+            national health insurance program in the Philippines.
+          </dd>
+          <dt>Employees Information System</dt>
+          <dd>
+            A desktop application to manage and organize various information and
+            data related to employees. This system serves as a centralized hub
+            for storing, retrieving, and managing employee-related information
+            securely.
+          </dd>
+          <dt>Employees Performance Monitoring System</dt>
+          <dd>
+            A web application used to assess, track, and manage the performance
+            of employees. This system helps in evaluating individual performance
+            against set goals, identifying areas for improvement, and
+            facilitating constructive feedback.
+          </dd>
+          <dt>HRMD Pooling System</dt>
+          <dd>
+            A desktop application that serve as a strategic approach to managing
+            human resources effectively by creating a structured framework for
+            talent acquisition, development, and deployment within an
+            organization. It aims to ensure that the right people are in the
+            right roles at the right time to support the organization's
+            objectives and growth.
+          </dd>
+          <dt>Online Research Abstract</dt>
+          <dd>
+            A web applciation that has a condensed summary of a research paper,
+            thesis, article, or study available and accessible on the internet.
+            It encapsulates the essential points, findings, and conclusions of
+            the research, allowing readers to quickly grasp the key aspects of
+            the work without reading the entire document.
+          </dd>
+          <dt>Patient Monitoring System</dt>
+          <dd>
+            A desktop application that has a structured collection of
+            information and records that contain comprehensive details about
+            individual patients. This database stores a wide range of
+            information related to each patient's medical history, demographics,
+            treatments, diagnoses, prescriptions, and other relevant
+            healthcare-related data.
+          </dd>
+          <dt>Philhealth Single Period of Confinement Monitoring System</dt>
+          <dd>
+            A web application to track and manage the period of hospital
+            confinement for insured individuals.
+          </dd>
+          <dt>Radiology Imaging System</dt>
+          <dd>
+            A web application used in radiology department to capture, store,
+            process, and analyze medical images obtained through various
+            radiological modalities. These systems play a critical role in
+            diagnostic imaging and healthcare by providing detailed visual
+            representations of internal body structures for medical
+            interpretation and diagnosis.
+          </dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="certifications" name="certifications">
+      <div class="section__title">
+        <h2 class="section__subtitle">Certifications</h2>
         <ul>
+          <li>The Complete SQL Bootcamp Go from Zero to Hero (Udemy) – 2023</li>
           <li>
-            The Complete SQL Bootcamp Go from Zero to Hero (Udemy) - Dec 2023
-          </li>
-          <li>
-            Crash Course: Build a Full-Stack Web App in a Weekend! (Udemy) - Nov
+            Crash Course: Build a Full-Stack Web App in a Weekend! (Udemy) –
             2023
           </li>
           <li>
-            The Ultimate React Course 2023: React, Redux & More (Udemy) - Oct
-            2023
+            The Ultimate React Course 2023: React, Redux & More (Udemy) – 2023
           </li>
-          <li>The Complete 2023 Web Development Bootcamp (Udemy) - Oct 2023</li>
+          <li>The Complete 2023 Web Development Bootcamp (Udemy) – 2023</li>
           <li>
-            Python and Django Full Stack Web Developer Bootcamp (Udemy) - Sep
-            2023
+            Python and Django Full Stack Web Developer Bootcamp (Udemy) – 2023
           </li>
-          <li>Build Python Web Apps with Flask - Aug 2022</li>
-          <li>Visualize Data with Python - Aug 2022</li>
-          <li>Analyze Data with Python - Aug 2022</li>
-          <li>Programming for Intermediate Users Using Python - Apr 2022</li>
-          <li>Programming for Beginners Using Python - Apr 2022</li>
-          <li>Learn Basic Statistics with Python - Apr 2022</li>
-          <li>Web Development Course (WordPress) - May 2019</li>
-          <li>Web Development Training (Joomla) - Dec 2015</li>
-          <li>Java Programming Course - Aug 2010</li>
+          <li>Build Python Web Apps with Flask – 2022</li>
+          <li>Visualize Data with Python – 2022</li>
+          <li>Analyze Data with Python – 2022</li>
+          <li>Programming for Intermediate Users Using Python – 2022</li>
+          <li>Programming for Beginners Using Python – 2022</li>
+          <li>Learn Basic Statistics with Python – 2022</li>
+          <li>Web Development Course (WordPress) – 2019</li>
+          <li>Web Development Training (Joomla) – 2015</li>
+          <li>
+            Java Programming Course (National Computer Center, Philippines) –
+            2010
+          </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact" name="contact">
+      <div class="section__title">
+        <h2 class="section__subtitle">Contact Information</h2>
+        <p>Johnson Benedict Corpus</p>
+        <p>Email: corpusjohnbenedict@gmail.com</p>
+        <p>Phone: 825 747 2979</p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/johnson-benedict-corpus-8a8238296"
+            class="linkedin"
+            target="_blank"
+            >https://www.linkedin.com/in/johnson-benedict-corpus-8a8238296</a
+          >
+        </p>
+        <p>
+          Website:
+          <a
+            href="https://tsikot39.github.io/johncorpus"
+            class="linkedin"
+            target="_blank"
+            >https://tsikot39.github.io/johncorpus</a
+          >
+        </p>
       </div>
     </section>
 
@@ -197,10 +315,5 @@
         <a class="footer__link" href="index.html">John Corpus</a>.
       </p>
     </footer>
-
-    <div class="modal hidden">
-      <button class="btn--close-modal"></button>
-    </div>
-    <div class="overlay hidden"></div>
   </body>
 </html>
