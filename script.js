@@ -33,21 +33,6 @@ document.addEventListener('keydown', function (e) {
 });
 
 ///////////////////////////////////////
-// Button scrolling when Learn More is clicked
-btnScrollTo.addEventListener('click', function (e) {
-  const s1coords = section1.getBoundingClientRect();
-  console.log(s1coords);
-  console.log(e.target.getBoundingClientRect());
-  console.log('Current scroll (X/Y)', window.pageXOffset, window.pageYOffset);
-  console.log(
-    'height/width viewport',
-    document.documentElement.clientHeight,
-    document.documentElement.clientWidth
-  );
-  section1.scrollIntoView({ behavior: 'smooth' });
-});
-
-///////////////////////////////////////
 // TOP MENU FADE ANIMATION
 const handleHover = function (e) {
   if (e.target.classList.contains('nav__link')) {
