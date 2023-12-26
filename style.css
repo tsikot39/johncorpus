@@ -72,14 +72,14 @@ body {
 
 .btn--text {
   display: inline-block;
-  background: none;
+  /* background: none; */
   font-size: 1.7rem;
   font-family: inherit;
   font-weight: 500;
   color: var(--color-primary);
-  border: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
+  border: 1px solid currentColor;
+  /* padding-bottom: 2px; */
+  padding: 5px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -95,13 +95,15 @@ img {
 
 /* NAVIGATION */
 .nav {
+  background-color: #37383d;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 9rem;
   width: 100%;
   padding: 0 6rem;
-  z-index: 100;
+  z-index: 10;
+  position: fixed;
 }
 
 /* nav and stickly class at the same time */
@@ -147,6 +149,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 60px;
 }
 
 .header__title {
@@ -247,4 +251,33 @@ ul {
   color: #f3f3f3;
   text-decoration: none;
   transition: all 0.3s;
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-primary);
+  color: #222;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  color: inherit;
+  background-color: var(--color-primary-darker);
+  color: #333;
+}
+
+dt {
+  color: #f3f3f3;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+dd {
+  margin-left: 40px;
+  margin-bottom: 15px;
+  color: #f3f3f3;
+  text-align: left;
+  font-size: 1.5rem;
 }
